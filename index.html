@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" charset="UTF-8">
+    <title>One Piece Crews</title>
+		<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+		<div id="banner">
+		</div>
+		<nav>
+		  <div class="toggle-nav">
+		    <span class="hamburger">|||</span>
+		  </div>
+			<ul>
+        <li><a href ="index.html">One Piece</a></li>
+        <li><a href ="Characters.html">Characters</a></li>
+        <li><a href ="Crews.html">Crews</a></li>
+				<li><a href ="Arcs.html">Arcs</a></li>
+				<li><a href ="info.html">Info</a></li>
+			</ul>
+		</nav>
+		
+		<div class = "container">
+          <div class = "col half">
+			<h1>One Piece</h1>
+			<p>One Piece is a Japanese manga series made by Eiichiro Oda. It has been featured in the weekly Shonen Jump magazine since July 22, 1997. The story follows the adventures of a young boy named Monkey D. Luffy, whose body gained the properties of rubber after accidentaly eating a Devil Fruit. Luffy with his crew of pirates, known as the Straw Hat Pirates, set out on the Grand Line in search of the One Piece, a legendary treasure that will grant wealth, fame, power, and title as King of the Pirates. The manga has also been adapted into an anime series, as well as several animated films, and specials that are produced by Toei Animation. One Piece has recieved praise for its art, characterization, and humor. The manga has recieved the Guiness World Record for "the most copies published for the same comic book series by a single author," and is the best-selling manga series with over 416 copies sold worldwide.<br></p>
+
+        </div>
+				<div class = "col half">
+      <img id="target" src="jumbotron.jpg" alt="one piece" width="50%" class=" thumbnail pull-center">
+					<br><br><br>
+          <input type="button" onclick="nextPic()" value="change image" />
+
+      	</div>
+      </div>
+		<div id="footer">
+			<p1>CopyRight By the Johnathan Hayden is Always Right foundation</p1>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+  </body>
+  
+	<script>
+    var target = document.getElementById('target');
+    var counter = 0;
+    var myPictures = [
+        "jumbotron.jpg",
+        "One_piece1.jpg",
+        "Vol85-192x300.jpg",
+        "white.jpg",
+        "water7.jpg"
+    ];
+
+    function nextPic() {
+      counter += 1;
+      if (counter > myPictures.length -1) {
+        counter = 0;
+      }
+      target.src = myPictures[counter];
+    }
+  </script>
+
+</html>
